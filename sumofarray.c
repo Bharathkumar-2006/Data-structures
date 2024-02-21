@@ -8,10 +8,13 @@ int main(){
 
     for(int i=0;i<5;i++){
         scanf("%d",arr+i);
+        sum += *(arr+i);
     }
     for(int i=0;i<5;i++){
         printf("%d\t",*(arr+i));
     }
+    printf("\nSum of the array:%d",sum);
+    
     return 0;
 
 }
