@@ -14,7 +14,7 @@ int main(){
         scanf("%d",arr+i);
         sum += *(arr+i);
     }
-    for(int i=0;i<5;i++){
+    for(int i=0;i<n;i++){
         printf("%d\t",*(arr+i));
     }
     printf("\nSum of the array:%d",sum);
