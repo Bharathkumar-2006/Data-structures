@@ -24,6 +24,9 @@ int main(){
     for(int i=0;i<n;i++){
         printf(" %d\t",*(arr3+i));
     }
+    free(arr1);
+    free(arr2);
+    free(arr3);
     return 0;
     
 }
