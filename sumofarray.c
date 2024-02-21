@@ -1,12 +1,16 @@
 #include <stdio.h>
 
 int main(){
-    int sum=0;
-    int *arr = (int*)malloc(5*sizeof(int));
+    int sum=0,n;
+
+    printf("Enter the size of the array:");
+    scanf("%d",&n);
+
+    int *arr = (int*)malloc(n*sizeof(int));
 
     printf("Enter the elements of the array:");
 
-    for(int i=0;i<5;i++){
+    for(int i=0;i<n;i++){
         scanf("%d",arr+i);
         sum += *(arr+i);
     }
@@ -14,6 +18,7 @@ int main(){
         printf("%d\t",*(arr+i));
     }
     printf("\nSum of the array:%d",sum);
+    free(arr);
     
     return 0;
 
