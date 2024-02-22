@@ -11,7 +11,7 @@ int main(){
     for(int i=0;i<3;i++){
     printf("Enter the title of %dst/nd/rd book:\n",i+1);
     scanf("%s",my_book[i].title);
-    printf("Enter the author nsme of %dst/nd/rd book:\n",i+1);
+    printf("Enter the author name of %dst/nd/rd book:\n",i+1);
     scanf("%s",my_book[i].author);
     printf("Enter the price of %dst/nd/rd book:\n",i+1);
     scanf("%d",&my_book[i].price);
@@ -27,6 +27,7 @@ int main(){
             max = i;
         }
     }
+    printf("\n\n");
 
     printf("The most expensive book is %s",my_book[max].title);
     printf(", written by %s.",my_book[max].author);
