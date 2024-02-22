@@ -4,7 +4,7 @@ struct book {
     char title[50];
     char author[50];
     int price;    
-}
+};
 
 int main(){
     struct book my_book[3];
