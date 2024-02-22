@@ -9,12 +9,12 @@ struct book {
 int main(){
     struct book my_book[3];
     for(int i=0;i<3;i++){
-    printf("Enter the title of %dst/nd/rd book:\n",i);
-    scanf("%s",my_book[0].title);
-    printf("Enter the author nsme of %dst/nd/rd book:\n",i);
-    scanf("%s",my_book[0].author);
-    printf("Enter the price of %dst/nd/rd book:\n",i);
-    scanf("%d",&my_book[0].price);
+    printf("Enter the title of %dst/nd/rd book:\n",i+1);
+    scanf("%s",my_book[i].title);
+    printf("Enter the author nsme of %dst/nd/rd book:\n",i+1);
+    scanf("%s",my_book[i].author);
+    printf("Enter the price of %dst/nd/rd book:\n",i+1);
+    scanf("%d",&my_book[i].price);
     }
     printf("\n\n");
     
